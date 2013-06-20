@@ -1,0 +1,184 @@
+testSchemas.o: testSchemas.c libxml.h config.h \
+  include/libxml/xmlversion.h include/libxml/xmlexports.h \
+  /home/matthew/emscripten/system/include/libc/stdio.h \
+  /home/matthew/emscripten/system/include/libc/_ansi.h \
+  /home/matthew/emscripten/system/include/libc/newlib.h \
+  /home/matthew/emscripten/system/include/libc/sys/config.h \
+  /home/matthew/emscripten/system/include/libc/machine/ieeefp.h \
+  /home/matthew/emscripten/system/include/libc/sys/features.h \
+  /home/matthew/emscripten/system/include/libc/stddef.h \
+  /home/matthew/emscripten/system/include/libc/stdarg.h \
+  /home/matthew/emscripten/system/include/libc/sys/reent.h \
+  /home/matthew/emscripten/system/include/libc/sys/_types.h \
+  /home/matthew/emscripten/system/include/libc/machine/_types.h \
+  /home/matthew/emscripten/system/include/libc/machine/_default_types.h \
+  /home/matthew/emscripten/system/include/libc/sys/lock.h \
+  /home/matthew/emscripten/system/include/libc/sys/types.h \
+  /home/matthew/emscripten/system/include/libc/machine/types.h \
+  /home/matthew/emscripten/system/include/libc/stdint.h \
+  /home/matthew/emscripten/system/include/libc/sys/sched.h \
+  /home/matthew/emscripten/system/include/libc/sys/stdio.h \
+  include/libxml/parser.h include/libxml/tree.h \
+  /home/matthew/emscripten/system/include/libc/limits.h \
+  include/libxml/xmlstring.h include/libxml/xmlregexp.h \
+  include/libxml/dict.h include/libxml/hash.h include/libxml/valid.h \
+  include/libxml/xmlerror.h include/libxml/list.h \
+  include/libxml/xmlautomata.h include/libxml/entities.h \
+  include/libxml/encoding.h \
+  /home/matthew/emscripten/system/include/libc/iconv.h \
+  /home/matthew/emscripten/system/include/libc/reent.h \
+  include/libxml/xmlIO.h include/libxml/globals.h include/libxml/SAX.h \
+  /home/matthew/emscripten/system/include/libc/stdlib.h \
+  /home/matthew/emscripten/system/include/libc/machine/stdlib.h \
+  /home/matthew/emscripten/system/include/libc/alloca.h \
+  include/libxml/xlink.h include/libxml/SAX2.h \
+  include/libxml/xmlmemory.h include/libxml/threads.h \
+  /home/matthew/emscripten/system/include/libc/string.h \
+  /home/matthew/emscripten/system/include/libc/sys/string.h \
+  /home/matthew/emscripten/system/include/libc/sys/stat.h \
+  /home/matthew/emscripten/system/include/libc/time.h \
+  /home/matthew/emscripten/system/include/libc/machine/time.h \
+  /home/matthew/emscripten/system/include/libc/signal.h \
+  /home/matthew/emscripten/system/include/libc/sys/signal.h \
+  /home/matthew/emscripten/system/include/libc/fcntl.h \
+  /home/matthew/emscripten/system/include/libc/sys/fcntl.h \
+  /home/matthew/emscripten/system/include/libc/sys/_default_fcntl.h \
+  /home/matthew/emscripten/system/include/libc/unistd.h \
+  /home/matthew/emscripten/system/include/libc/sys/unistd.h \
+  /home/matthew/emscripten/system/include/bsd/sys/mman.h \
+  /home/matthew/emscripten/system/include/libc/sys/cdefs.h \
+  include/libxml/debugXML.h include/libxml/xpath.h \
+  include/libxml/xmlschemas.h include/libxml/xmlschemastypes.h \
+  include/libxml/schemasInternals.h
+
+libxml.h:
+
+config.h:
+
+include/libxml/xmlversion.h:
+
+include/libxml/xmlexports.h:
+
+/home/matthew/emscripten/system/include/libc/stdio.h:
+
+/home/matthew/emscripten/system/include/libc/_ansi.h:
+
+/home/matthew/emscripten/system/include/libc/newlib.h:
+
+/home/matthew/emscripten/system/include/libc/sys/config.h:
+
+/home/matthew/emscripten/system/include/libc/machine/ieeefp.h:
+
+/home/matthew/emscripten/system/include/libc/sys/features.h:
+
+/home/matthew/emscripten/system/include/libc/stddef.h:
+
+/home/matthew/emscripten/system/include/libc/stdarg.h:
+
+/home/matthew/emscripten/system/include/libc/sys/reent.h:
+
+/home/matthew/emscripten/system/include/libc/sys/_types.h:
+
+/home/matthew/emscripten/system/include/libc/machine/_types.h:
+
+/home/matthew/emscripten/system/include/libc/machine/_default_types.h:
+
+/home/matthew/emscripten/system/include/libc/sys/lock.h:
+
+/home/matthew/emscripten/system/include/libc/sys/types.h:
+
+/home/matthew/emscripten/system/include/libc/machine/types.h:
+
+/home/matthew/emscripten/system/include/libc/stdint.h:
+
+/home/matthew/emscripten/system/include/libc/sys/sched.h:
+
+/home/matthew/emscripten/system/include/libc/sys/stdio.h:
+
+include/libxml/parser.h:
+
+include/libxml/tree.h:
+
+/home/matthew/emscripten/system/include/libc/limits.h:
+
+include/libxml/xmlstring.h:
+
+include/libxml/xmlregexp.h:
+
+include/libxml/dict.h:
+
+include/libxml/hash.h:
+
+include/libxml/valid.h:
+
+include/libxml/xmlerror.h:
+
+include/libxml/list.h:
+
+include/libxml/xmlautomata.h:
+
+include/libxml/entities.h:
+
+include/libxml/encoding.h:
+
+/home/matthew/emscripten/system/include/libc/iconv.h:
+
+/home/matthew/emscripten/system/include/libc/reent.h:
+
+include/libxml/xmlIO.h:
+
+include/libxml/globals.h:
+
+include/libxml/SAX.h:
+
+/home/matthew/emscripten/system/include/libc/stdlib.h:
+
+/home/matthew/emscripten/system/include/libc/machine/stdlib.h:
+
+/home/matthew/emscripten/system/include/libc/alloca.h:
+
+include/libxml/xlink.h:
+
+include/libxml/SAX2.h:
+
+include/libxml/xmlmemory.h:
+
+include/libxml/threads.h:
+
+/home/matthew/emscripten/system/include/libc/string.h:
+
+/home/matthew/emscripten/system/include/libc/sys/string.h:
+
+/home/matthew/emscripten/system/include/libc/sys/stat.h:
+
+/home/matthew/emscripten/system/include/libc/time.h:
+
+/home/matthew/emscripten/system/include/libc/machine/time.h:
+
+/home/matthew/emscripten/system/include/libc/signal.h:
+
+/home/matthew/emscripten/system/include/libc/sys/signal.h:
+
+/home/matthew/emscripten/system/include/libc/fcntl.h:
+
+/home/matthew/emscripten/system/include/libc/sys/fcntl.h:
+
+/home/matthew/emscripten/system/include/libc/sys/_default_fcntl.h:
+
+/home/matthew/emscripten/system/include/libc/unistd.h:
+
+/home/matthew/emscripten/system/include/libc/sys/unistd.h:
+
+/home/matthew/emscripten/system/include/bsd/sys/mman.h:
+
+/home/matthew/emscripten/system/include/libc/sys/cdefs.h:
+
+include/libxml/debugXML.h:
+
+include/libxml/xpath.h:
+
+include/libxml/xmlschemas.h:
+
+include/libxml/xmlschemastypes.h:
+
+include/libxml/schemasInternals.h:

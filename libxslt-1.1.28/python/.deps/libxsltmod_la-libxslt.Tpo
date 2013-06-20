@@ -1,0 +1,429 @@
+libxsltmod_la-libxslt.lo: libxslt.c /usr/include/python2.7/Python.h \
+  /usr/include/python2.7/patchlevel.h /usr/include/python2.7/pyconfig.h \
+  /usr/include/python2.7/pymacconfig.h \
+  /home/matthew/emscripten/system/include/libc/limits.h \
+  /home/matthew/emscripten/system/include/libc/newlib.h \
+  /home/matthew/emscripten/system/include/libc/sys/config.h \
+  /home/matthew/emscripten/system/include/libc/machine/ieeefp.h \
+  /home/matthew/emscripten/system/include/libc/sys/features.h \
+  /home/matthew/emscripten/system/include/libc/stdio.h \
+  /home/matthew/emscripten/system/include/libc/_ansi.h \
+  /home/matthew/emscripten/system/include/libc/stddef.h \
+  /home/matthew/emscripten/system/include/libc/stdarg.h \
+  /home/matthew/emscripten/system/include/libc/sys/reent.h \
+  /home/matthew/emscripten/system/include/libc/sys/_types.h \
+  /home/matthew/emscripten/system/include/libc/machine/_types.h \
+  /home/matthew/emscripten/system/include/libc/machine/_default_types.h \
+  /home/matthew/emscripten/system/include/libc/sys/lock.h \
+  /home/matthew/emscripten/system/include/libc/sys/types.h \
+  /home/matthew/emscripten/system/include/libc/machine/types.h \
+  /home/matthew/emscripten/system/include/libc/stdint.h \
+  /home/matthew/emscripten/system/include/libc/sys/sched.h \
+  /home/matthew/emscripten/system/include/libc/sys/stdio.h \
+  /home/matthew/emscripten/system/include/libc/string.h \
+  /home/matthew/emscripten/system/include/libc/sys/string.h \
+  /home/matthew/emscripten/system/include/libc/stdlib.h \
+  /home/matthew/emscripten/system/include/libc/machine/stdlib.h \
+  /home/matthew/emscripten/system/include/libc/alloca.h \
+  /home/matthew/emscripten/system/include/libc/assert.h \
+  /usr/include/python2.7/pyport.h \
+  /home/matthew/emscripten/system/include/libc/math.h \
+  /home/matthew/emscripten/system/include/libc/time.h \
+  /home/matthew/emscripten/system/include/libc/machine/time.h \
+  /home/matthew/emscripten/system/include/libc/signal.h \
+  /home/matthew/emscripten/system/include/libc/sys/signal.h \
+  /usr/include/python2.7/pymath.h /usr/include/python2.7/pymem.h \
+  /usr/include/python2.7/object.h /usr/include/python2.7/objimpl.h \
+  /usr/include/python2.7/pydebug.h \
+  /usr/include/python2.7/unicodeobject.h \
+  /home/matthew/emscripten/system/include/libc/ctype.h \
+  /usr/include/python2.7/intobject.h /usr/include/python2.7/boolobject.h \
+  /usr/include/python2.7/longobject.h \
+  /usr/include/python2.7/floatobject.h \
+  /usr/include/python2.7/complexobject.h \
+  /usr/include/python2.7/rangeobject.h \
+  /usr/include/python2.7/stringobject.h \
+  /usr/include/python2.7/memoryobject.h \
+  /usr/include/python2.7/bufferobject.h \
+  /usr/include/python2.7/bytesobject.h \
+  /usr/include/python2.7/bytearrayobject.h \
+  /usr/include/python2.7/tupleobject.h \
+  /usr/include/python2.7/listobject.h \
+  /usr/include/python2.7/dictobject.h \
+  /usr/include/python2.7/enumobject.h /usr/include/python2.7/setobject.h \
+  /usr/include/python2.7/methodobject.h \
+  /usr/include/python2.7/moduleobject.h \
+  /usr/include/python2.7/funcobject.h \
+  /usr/include/python2.7/classobject.h \
+  /usr/include/python2.7/fileobject.h /usr/include/python2.7/cobject.h \
+  /usr/include/python2.7/pycapsule.h /usr/include/python2.7/traceback.h \
+  /usr/include/python2.7/sliceobject.h \
+  /usr/include/python2.7/cellobject.h \
+  /usr/include/python2.7/iterobject.h /usr/include/python2.7/genobject.h \
+  /usr/include/python2.7/descrobject.h /usr/include/python2.7/warnings.h \
+  /usr/include/python2.7/weakrefobject.h /usr/include/python2.7/codecs.h \
+  /usr/include/python2.7/pyerrors.h /usr/include/python2.7/pystate.h \
+  /usr/include/python2.7/pyarena.h /usr/include/python2.7/modsupport.h \
+  /usr/include/python2.7/pythonrun.h /usr/include/python2.7/ceval.h \
+  /usr/include/python2.7/sysmodule.h /usr/include/python2.7/intrcheck.h \
+  /usr/include/python2.7/import.h /usr/include/python2.7/abstract.h \
+  /usr/include/python2.7/compile.h /usr/include/python2.7/code.h \
+  /usr/include/python2.7/eval.h /usr/include/python2.7/pyctype.h \
+  /usr/include/python2.7/pystrtod.h /usr/include/python2.7/pystrcmp.h \
+  /usr/include/python2.7/dtoa.h /usr/include/python2.7/pyfpe.h \
+  /home/matthew/Development/xslt.js/libxml2-2.9.1/include/libxml/xmlmemory.h \
+  /home/matthew/Development/xslt.js/libxml2-2.9.1/include/libxml/xmlversion.h \
+  /home/matthew/Development/xslt.js/libxml2-2.9.1/include/libxml/xmlexports.h \
+  /home/matthew/Development/xslt.js/libxml2-2.9.1/include/libxml/threads.h \
+  /home/matthew/Development/xslt.js/libxml2-2.9.1/include/libxml/globals.h \
+  /home/matthew/Development/xslt.js/libxml2-2.9.1/include/libxml/parser.h \
+  /home/matthew/Development/xslt.js/libxml2-2.9.1/include/libxml/tree.h \
+  /home/matthew/Development/xslt.js/libxml2-2.9.1/include/libxml/xmlstring.h \
+  /home/matthew/Development/xslt.js/libxml2-2.9.1/include/libxml/xmlregexp.h \
+  /home/matthew/Development/xslt.js/libxml2-2.9.1/include/libxml/dict.h \
+  /home/matthew/Development/xslt.js/libxml2-2.9.1/include/libxml/hash.h \
+  /home/matthew/Development/xslt.js/libxml2-2.9.1/include/libxml/valid.h \
+  /home/matthew/Development/xslt.js/libxml2-2.9.1/include/libxml/xmlerror.h \
+  /home/matthew/Development/xslt.js/libxml2-2.9.1/include/libxml/list.h \
+  /home/matthew/Development/xslt.js/libxml2-2.9.1/include/libxml/xmlautomata.h \
+  /home/matthew/Development/xslt.js/libxml2-2.9.1/include/libxml/entities.h \
+  /home/matthew/Development/xslt.js/libxml2-2.9.1/include/libxml/encoding.h \
+  /home/matthew/emscripten/system/include/libc/iconv.h \
+  /home/matthew/emscripten/system/include/libc/reent.h \
+  /home/matthew/Development/xslt.js/libxml2-2.9.1/include/libxml/xmlIO.h \
+  /home/matthew/Development/xslt.js/libxml2-2.9.1/include/libxml/SAX.h \
+  /home/matthew/Development/xslt.js/libxml2-2.9.1/include/libxml/xlink.h \
+  /home/matthew/Development/xslt.js/libxml2-2.9.1/include/libxml/SAX2.h \
+  /home/matthew/Development/xslt.js/libxml2-2.9.1/include/libxml/xpath.h \
+  ../libexslt/exslt.h ../libexslt/exsltexports.h \
+  ../libexslt/exsltconfig.h libxslt_wrap.h libxml_wrap.h \
+  /home/matthew/Development/xslt.js/libxml2-2.9.1/include/libxml/parserInternals.h \
+  /home/matthew/Development/xslt.js/libxml2-2.9.1/include/libxml/HTMLparser.h \
+  /home/matthew/Development/xslt.js/libxml2-2.9.1/include/libxml/chvalid.h \
+  /home/matthew/Development/xslt.js/libxml2-2.9.1/include/libxml/catalog.h \
+  /home/matthew/Development/xslt.js/libxml2-2.9.1/include/libxml/nanoftp.h \
+  /home/matthew/Development/xslt.js/libxml2-2.9.1/include/libxml/nanohttp.h \
+  /home/matthew/Development/xslt.js/libxml2-2.9.1/include/libxml/uri.h \
+  /home/matthew/Development/xslt.js/libxml2-2.9.1/include/libxml/xpathInternals.h \
+  /home/matthew/Development/xslt.js/libxml2-2.9.1/include/libxml/debugXML.h \
+  /home/matthew/Development/xslt.js/libxml2-2.9.1/include/libxml/HTMLtree.h \
+  /home/matthew/Development/xslt.js/libxml2-2.9.1/include/libxml/xinclude.h \
+  /home/matthew/Development/xslt.js/libxml2-2.9.1/include/libxml/xpointer.h \
+  ../libxslt/xslt.h ../libxslt/xsltexports.h ../libxslt/xsltInternals.h \
+  ../libxslt/xsltlocale.h ../libxslt/numbersInternals.h \
+  ../libxslt/xsltutils.h ../libxslt/xsltconfig.h ../libxslt/attributes.h \
+  ../libxslt/documents.h ../libxslt/extensions.h ../libxslt/extra.h \
+  ../libxslt/functions.h ../libxslt/imports.h ../libxslt/keys.h \
+  ../libxslt/namespaces.h ../libxslt/pattern.h ../libxslt/preproc.h \
+  ../libxslt/templates.h ../libxslt/transform.h ../libxslt/variables.h \
+  libxslt-py.h libxslt-export.c
+
+/usr/include/python2.7/Python.h:
+
+/usr/include/python2.7/patchlevel.h:
+
+/usr/include/python2.7/pyconfig.h:
+
+/usr/include/python2.7/pymacconfig.h:
+
+/home/matthew/emscripten/system/include/libc/limits.h:
+
+/home/matthew/emscripten/system/include/libc/newlib.h:
+
+/home/matthew/emscripten/system/include/libc/sys/config.h:
+
+/home/matthew/emscripten/system/include/libc/machine/ieeefp.h:
+
+/home/matthew/emscripten/system/include/libc/sys/features.h:
+
+/home/matthew/emscripten/system/include/libc/stdio.h:
+
+/home/matthew/emscripten/system/include/libc/_ansi.h:
+
+/home/matthew/emscripten/system/include/libc/stddef.h:
+
+/home/matthew/emscripten/system/include/libc/stdarg.h:
+
+/home/matthew/emscripten/system/include/libc/sys/reent.h:
+
+/home/matthew/emscripten/system/include/libc/sys/_types.h:
+
+/home/matthew/emscripten/system/include/libc/machine/_types.h:
+
+/home/matthew/emscripten/system/include/libc/machine/_default_types.h:
+
+/home/matthew/emscripten/system/include/libc/sys/lock.h:
+
+/home/matthew/emscripten/system/include/libc/sys/types.h:
+
+/home/matthew/emscripten/system/include/libc/machine/types.h:
+
+/home/matthew/emscripten/system/include/libc/stdint.h:
+
+/home/matthew/emscripten/system/include/libc/sys/sched.h:
+
+/home/matthew/emscripten/system/include/libc/sys/stdio.h:
+
+/home/matthew/emscripten/system/include/libc/string.h:
+
+/home/matthew/emscripten/system/include/libc/sys/string.h:
+
+/home/matthew/emscripten/system/include/libc/stdlib.h:
+
+/home/matthew/emscripten/system/include/libc/machine/stdlib.h:
+
+/home/matthew/emscripten/system/include/libc/alloca.h:
+
+/home/matthew/emscripten/system/include/libc/assert.h:
+
+/usr/include/python2.7/pyport.h:
+
+/home/matthew/emscripten/system/include/libc/math.h:
+
+/home/matthew/emscripten/system/include/libc/time.h:
+
+/home/matthew/emscripten/system/include/libc/machine/time.h:
+
+/home/matthew/emscripten/system/include/libc/signal.h:
+
+/home/matthew/emscripten/system/include/libc/sys/signal.h:
+
+/usr/include/python2.7/pymath.h:
+
+/usr/include/python2.7/pymem.h:
+
+/usr/include/python2.7/object.h:
+
+/usr/include/python2.7/objimpl.h:
+
+/usr/include/python2.7/pydebug.h:
+
+/usr/include/python2.7/unicodeobject.h:
+
+/home/matthew/emscripten/system/include/libc/ctype.h:
+
+/usr/include/python2.7/intobject.h:
+
+/usr/include/python2.7/boolobject.h:
+
+/usr/include/python2.7/longobject.h:
+
+/usr/include/python2.7/floatobject.h:
+
+/usr/include/python2.7/complexobject.h:
+
+/usr/include/python2.7/rangeobject.h:
+
+/usr/include/python2.7/stringobject.h:
+
+/usr/include/python2.7/memoryobject.h:
+
+/usr/include/python2.7/bufferobject.h:
+
+/usr/include/python2.7/bytesobject.h:
+
+/usr/include/python2.7/bytearrayobject.h:
+
+/usr/include/python2.7/tupleobject.h:
+
+/usr/include/python2.7/listobject.h:
+
+/usr/include/python2.7/dictobject.h:
+
+/usr/include/python2.7/enumobject.h:
+
+/usr/include/python2.7/setobject.h:
+
+/usr/include/python2.7/methodobject.h:
+
+/usr/include/python2.7/moduleobject.h:
+
+/usr/include/python2.7/funcobject.h:
+
+/usr/include/python2.7/classobject.h:
+
+/usr/include/python2.7/fileobject.h:
+
+/usr/include/python2.7/cobject.h:
+
+/usr/include/python2.7/pycapsule.h:
+
+/usr/include/python2.7/traceback.h:
+
+/usr/include/python2.7/sliceobject.h:
+
+/usr/include/python2.7/cellobject.h:
+
+/usr/include/python2.7/iterobject.h:
+
+/usr/include/python2.7/genobject.h:
+
+/usr/include/python2.7/descrobject.h:
+
+/usr/include/python2.7/warnings.h:
+
+/usr/include/python2.7/weakrefobject.h:
+
+/usr/include/python2.7/codecs.h:
+
+/usr/include/python2.7/pyerrors.h:
+
+/usr/include/python2.7/pystate.h:
+
+/usr/include/python2.7/pyarena.h:
+
+/usr/include/python2.7/modsupport.h:
+
+/usr/include/python2.7/pythonrun.h:
+
+/usr/include/python2.7/ceval.h:
+
+/usr/include/python2.7/sysmodule.h:
+
+/usr/include/python2.7/intrcheck.h:
+
+/usr/include/python2.7/import.h:
+
+/usr/include/python2.7/abstract.h:
+
+/usr/include/python2.7/compile.h:
+
+/usr/include/python2.7/code.h:
+
+/usr/include/python2.7/eval.h:
+
+/usr/include/python2.7/pyctype.h:
+
+/usr/include/python2.7/pystrtod.h:
+
+/usr/include/python2.7/pystrcmp.h:
+
+/usr/include/python2.7/dtoa.h:
+
+/usr/include/python2.7/pyfpe.h:
+
+/home/matthew/Development/xslt.js/libxml2-2.9.1/include/libxml/xmlmemory.h:
+
+/home/matthew/Development/xslt.js/libxml2-2.9.1/include/libxml/xmlversion.h:
+
+/home/matthew/Development/xslt.js/libxml2-2.9.1/include/libxml/xmlexports.h:
+
+/home/matthew/Development/xslt.js/libxml2-2.9.1/include/libxml/threads.h:
+
+/home/matthew/Development/xslt.js/libxml2-2.9.1/include/libxml/globals.h:
+
+/home/matthew/Development/xslt.js/libxml2-2.9.1/include/libxml/parser.h:
+
+/home/matthew/Development/xslt.js/libxml2-2.9.1/include/libxml/tree.h:
+
+/home/matthew/Development/xslt.js/libxml2-2.9.1/include/libxml/xmlstring.h:
+
+/home/matthew/Development/xslt.js/libxml2-2.9.1/include/libxml/xmlregexp.h:
+
+/home/matthew/Development/xslt.js/libxml2-2.9.1/include/libxml/dict.h:
+
+/home/matthew/Development/xslt.js/libxml2-2.9.1/include/libxml/hash.h:
+
+/home/matthew/Development/xslt.js/libxml2-2.9.1/include/libxml/valid.h:
+
+/home/matthew/Development/xslt.js/libxml2-2.9.1/include/libxml/xmlerror.h:
+
+/home/matthew/Development/xslt.js/libxml2-2.9.1/include/libxml/list.h:
+
+/home/matthew/Development/xslt.js/libxml2-2.9.1/include/libxml/xmlautomata.h:
+
+/home/matthew/Development/xslt.js/libxml2-2.9.1/include/libxml/entities.h:
+
+/home/matthew/Development/xslt.js/libxml2-2.9.1/include/libxml/encoding.h:
+
+/home/matthew/emscripten/system/include/libc/iconv.h:
+
+/home/matthew/emscripten/system/include/libc/reent.h:
+
+/home/matthew/Development/xslt.js/libxml2-2.9.1/include/libxml/xmlIO.h:
+
+/home/matthew/Development/xslt.js/libxml2-2.9.1/include/libxml/SAX.h:
+
+/home/matthew/Development/xslt.js/libxml2-2.9.1/include/libxml/xlink.h:
+
+/home/matthew/Development/xslt.js/libxml2-2.9.1/include/libxml/SAX2.h:
+
+/home/matthew/Development/xslt.js/libxml2-2.9.1/include/libxml/xpath.h:
+
+../libexslt/exslt.h:
+
+../libexslt/exsltexports.h:
+
+../libexslt/exsltconfig.h:
+
+libxslt_wrap.h:
+
+libxml_wrap.h:
+
+/home/matthew/Development/xslt.js/libxml2-2.9.1/include/libxml/parserInternals.h:
+
+/home/matthew/Development/xslt.js/libxml2-2.9.1/include/libxml/HTMLparser.h:
+
+/home/matthew/Development/xslt.js/libxml2-2.9.1/include/libxml/chvalid.h:
+
+/home/matthew/Development/xslt.js/libxml2-2.9.1/include/libxml/catalog.h:
+
+/home/matthew/Development/xslt.js/libxml2-2.9.1/include/libxml/nanoftp.h:
+
+/home/matthew/Development/xslt.js/libxml2-2.9.1/include/libxml/nanohttp.h:
+
+/home/matthew/Development/xslt.js/libxml2-2.9.1/include/libxml/uri.h:
+
+/home/matthew/Development/xslt.js/libxml2-2.9.1/include/libxml/xpathInternals.h:
+
+/home/matthew/Development/xslt.js/libxml2-2.9.1/include/libxml/debugXML.h:
+
+/home/matthew/Development/xslt.js/libxml2-2.9.1/include/libxml/HTMLtree.h:
+
+/home/matthew/Development/xslt.js/libxml2-2.9.1/include/libxml/xinclude.h:
+
+/home/matthew/Development/xslt.js/libxml2-2.9.1/include/libxml/xpointer.h:
+
+../libxslt/xslt.h:
+
+../libxslt/xsltexports.h:
+
+../libxslt/xsltInternals.h:
+
+../libxslt/xsltlocale.h:
+
+../libxslt/numbersInternals.h:
+
+../libxslt/xsltutils.h:
+
+../libxslt/xsltconfig.h:
+
+../libxslt/attributes.h:
+
+../libxslt/documents.h:
+
+../libxslt/extensions.h:
+
+../libxslt/extra.h:
+
+../libxslt/functions.h:
+
+../libxslt/imports.h:
+
+../libxslt/keys.h:
+
+../libxslt/namespaces.h:
+
+../libxslt/pattern.h:
+
+../libxslt/preproc.h:
+
+../libxslt/templates.h:
+
+../libxslt/transform.h:
+
+../libxslt/variables.h:
+
+libxslt-py.h:
+
+libxslt-export.c:
