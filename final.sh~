@@ -1,6 +1,6 @@
 echo "self.addEventListener('message', function (e) {" > xsltproc.js
 echo "	postMessage(convertDocbookToHTML(e.data));" >> xsltproc.js
-echo "});" >> xsltproc.js
+echo "});" > xsltproc.js
 
 echo "function convertDocbookToHTML(xml) {" >> xsltproc.js
 echo "  var Module = {" >> xsltproc.js
