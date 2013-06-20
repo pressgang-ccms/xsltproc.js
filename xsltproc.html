@@ -5,7 +5,28 @@
 </head>
 <body>
 	<script>
+		/* 
+			this works in chrome and firefox
+		*/
 		console.log(convertDocbookToHTML("<section><title>hi</title></section>"));
+		
+		/*
+			this results in a "Uncaught RangeError: Maximum call stack size exceeded" in chrome
+		*/
+		worker = new Worker("xsltproc.js");
+		worker.addEventListener('message', function(e) {
+			console.log(e.data);
+		});
+		worker.postMessage(
+		"<section>" +
+			"<title>This is a test topic</title>" +
+			"<para>" +
+				"I am a paragraph that exists in both revisions." +
+			"</para>" +
+			"<para>" +
+				"test update 9" +
+			"</para>" +
+		"</section>");
 	</script>
 </body>
 </html>
