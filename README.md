@@ -1,6 +1,8 @@
 This is xsltproc compiled to JavaScript using emscripten.
 
-There are some manual steps required to get xsltproc to compile.
+To see the library in action, download xsltproc.html and xsltproc.js. Note that Chrome has a bug with Web Workers - https://code.google.com/p/chromium/issues/detail?id=252492.
+
+To compile xsltproc yourself, thete are some manual steps required.
 
 First, the following lines need to be added to the emscripten/system/include/net/netinet/in.h file included in the emscripten distribution (see see http://pubs.opengroup.org/onlinepubs/009695399/basedefs/arpa/inet.h.html for details):
 
