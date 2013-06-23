@@ -1,6 +1,12 @@
 This is xsltproc compiled to JavaScript using emscripten.
 
+USAGE
+=====
+
 To see the library in action, download xsltproc.html and xsltproc.js. Note that Chrome has a bug with Web Workers - https://code.google.com/p/chromium/issues/detail?id=252492.
+
+COMPILING
+=========
 
 To compile xsltproc yourself, thete are some manual steps required.
 
