@@ -30,7 +30,7 @@ Configure and make the zlib library (included in emscripten/tests/zlib/) with th
     ~/emscripten/emmake make
 
 Configure and make xsltproc with the following commans:
-
+    chmod +x ../libxml2-2.9.1/xml2-config
     ~/emscripten/emconfigure ./configure --with-libxml-src=../libxml2-2.9.1 --without-python
     export EMCC_CFLAGS=--ignore-dynamic-linking
     ~/emscripten/emmake make
