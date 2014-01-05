@@ -5,6 +5,10 @@ USAGE
 
 To see the library in action, download xsltproc.html and xsltproc.js. Note that Chrome has a bug with Web Workers - https://code.google.com/p/chromium/issues/detail?id=252492.
 
+SETTING UP EMSCRIPTEN
+=====================
+https://gist.github.com/mcasperson/8274405 notes some of the configuration required under Fedora to get Emscripten working.
+
 COMPILING
 =========
 
