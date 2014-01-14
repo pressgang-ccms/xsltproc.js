@@ -10,10 +10,15 @@ cat xsltproc.raw.js >> xsltproc.js
 echo "  return Module.return;" >> xsltproc.js
 echo "}  " >> xsltproc.js
 
-echo "function validateXML(xml, schema) {" > xmllint.js
+echo "self.addEventListener('message', function (e) {" > xmllint.js
+echo "	postMessage(validateXML(e.data.xml, e.data.schema, e.data.nrg));" >> xmllint.js
+echo "});" >> xmllint.js
+
+echo "function validateXML(xml, schema, nrg) {" >> xmllint.js
 echo "  var Module = {" >> xmllint.js
 echo "    xml: xml," >> xmllint.js
-echo "    schema: schema" >> xmllint.js
+echo "    schema: schema," >> xmllint.js
+echo "    nrg: nrg" >> xmllint.js
 echo "  };" >> xmllint.js
 cat xmllint.raw.js >> xmllint.js
 echo "  return Module.return;" >> xmllint.js
