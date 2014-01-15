@@ -11,14 +11,14 @@ echo "  return Module.return;" >> xsltproc.js
 echo "}  " >> xsltproc.js
 
 echo "self.addEventListener('message', function (e) {" > xmllint.js
-echo "	postMessage(validateXML(e.data.xml, e.data.schema, e.data.rng));" >> xmllint.js
+echo "	postMessage(validateXML(e.data.xml, e.data.docbook4, e.data.docbook5));" >> xmllint.js
 echo "});" >> xmllint.js
 
-echo "function validateXML(xml, schema, rng) {" >> xmllint.js
+echo "function validateXML(xml, docbook4, docbook5) {" >> xmllint.js
 echo "  var Module = {" >> xmllint.js
 echo "    xml: xml," >> xmllint.js
-echo "    schema: schema," >> xmllint.js
-echo "    rng: rng" >> xmllint.js
+echo "    docbook4: docbook4," >> xmllint.js
+echo "    docbook5: docbook5" >> xmllint.js
 echo "  };" >> xmllint.js
 cat xmllint.raw.js >> xmllint.js
 echo "  return Module.return;" >> xmllint.js
