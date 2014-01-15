@@ -1,4 +1,4 @@
-This is xsltproc compiled to JavaScript using emscripten.
+This is xmllint and xsltproc compiled to JavaScript using Emscripten.
 
 USAGE
 =====
