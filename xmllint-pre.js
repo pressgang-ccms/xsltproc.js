@@ -3,23 +3,15 @@ if (!Module['preRun']) {
 }
 Module['preRun'].push(function() {
     FS.createDataFile('/', 'topic.xml', Module['intArrayFromString'](Module['xml']), true, true);
-    if (Module['schema'])
-		{
-			FS.createDataFile('/', 'docbook45.dtd', Module['intArrayFromString'](Module['schema']), true, true);
-		}
-		else if (Module['rng'])
-		{
-			FS.createDataFile('/', 'docbook5.rng', Module['intArrayFromString'](Module['rng']), true, true);
-		}
 });
 
-if (Module['schema'])
+if (Module['docbook4'])
 {
-	Module.arguments = ["--noout", "--dtdvalid", "docbook45.dtd", "topic.xml"];
+	Module.arguments = ["--noout", "--dtdvalid", "schemas/docbook45.dtd", "topic.xml"];
 }
-else if (Module['rng'])
+else if (Module['docbook5'])
 {
-	Module.arguments = ["--noout", "--relaxng", "docbook5.rng", "topic.xml"];
+	Module.arguments = ["--noout", "--relaxng", "schemas/docbook5.rng", "topic.xml"];
 }
 
 Module['return'] = '';
