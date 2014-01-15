@@ -74,10 +74,14 @@ to
 	    Module['arguments'] = arguments;
 	  }
 	  if (typeof console !== 'undefined') {
-	    Module['print'] = Module['print'] || function print(x) {
+	    /*
+            We already define functions for print and printErr, so comment these out.
+
+            Module['print'] = function print(x) {
 	      console.log(x);
 	    };
-	    Module['printErr'] = Module['printErr'] || function printErr(x) {
+	    Module['printErr'] = function printErr(x) {
 	      console.log(x);
 	    };
+            */
 	  }
