@@ -77,7 +77,7 @@ to
 	    Module['print'] = Module['print'] || function print(x) {
 	      console.log(x);
 	    };
-	    Module['printErr'] = function printErr(x) {
+	    Module['printErr'] = Module['printErr'] || function printErr(x) {
 	      console.log(x);
 	    };
 	  }
