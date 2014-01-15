@@ -40,7 +40,7 @@ Configure and make xsltproc with the following commands:
 	cd ..
 	./final.sh
 	
-A manual change to the generated code is required to fix a bug where Emscripten overwrites Module['print'] (see https://groups.google.com/forum/#!topic/emscripten-discuss/vRkHs0FNH_Y for details). In xmllint.js, change
+A manual change to the generated code is required to fix a bug where Emscripten overwrites Module\['print'\] (see https://groups.google.com/forum/#!topic/emscripten-discuss/vRkHs0FNH_Y for details). In xmllint.js, change
 
 	else if (ENVIRONMENT_IS_WEB || ENVIRONMENT_IS_WORKER) {
 	  Module['read'] = function read(url) {
