@@ -22,7 +22,7 @@ Configure and make xmllib2 and xmllint with the following commands:
 
     ~/emscripten/emconfigure ./configure --without-python --without-threads --without-ftp --without-http
     ~/emscripten/emmake make
-    ~/emscripten/emcc SAX.o entities.o encoding.o error.o parserInternals.o parser.o tree.o hash.o list.o xmlIO.o xmlmemory.o uri.o valid.o xlink.o HTMLparser.o HTMLtree.o debugXML.o xpath.o xpointer.o xinclude.o nanohttp.o nanoftp.o catalog.o globals.o threads.o c14n.o xmlstring.o buf.o xmlregexp.o xmlschemas.o xmlschemastypes.o xmlunicode.o xmlreader.o relaxng.o dict.o SAX2.o xmlwriter.o legacy.o chvalid.o pattern.o xmlsave.o xmlmodule.o schematron.o xzlib.o xmllint.o ~/git/emscripten/tests/zlib/libz.a -O2 -o ../xmllint.raw.js -s ASM_JS=0 --pre-js ../xmllint-pre.js --embed-file schema/docbook45.dtd --embed-file schema/docbook5.rng
+    ~/emscripten/emcc SAX.o entities.o encoding.o error.o parserInternals.o parser.o tree.o hash.o list.o xmlIO.o xmlmemory.o uri.o valid.o xlink.o HTMLparser.o HTMLtree.o debugXML.o xpath.o xpointer.o xinclude.o nanohttp.o nanoftp.o catalog.o globals.o threads.o c14n.o xmlstring.o buf.o xmlregexp.o xmlschemas.o xmlschemastypes.o xmlunicode.o xmlreader.o relaxng.o dict.o SAX2.o xmlwriter.o legacy.o chvalid.o pattern.o xmlsave.o xmlmodule.o schematron.o xzlib.o xmllint.o ~/git/emscripten/tests/zlib/libz.a -O2 -o ../xmllint.raw.js -s ASM_JS=0 --pre-js ../xmllint-pre.js --embed-file schema/docbook45.dtd --embed-file schema/docbook50.dtd
 
 Configure and make the zlib library (included in emscripten/tests/zlib/) with the following commands:
 
