@@ -2,7 +2,7 @@ if (!Module['preRun']) {
 	Module['preRun'] = [];
 }
 Module['preRun'].push(function() {
-    FS.createDataFile('/', 'topic.xml', Module['intArrayFromString'](Module['xml']), true, true);
+	FS.createDataFile('/', 'topic.xml', Module['intArrayFromString'](Module['xml']), true, true);
 });
 
 if (Module['docbook4'])
@@ -11,10 +11,10 @@ if (Module['docbook4'])
 }
 else if (Module['docbook5'])
 {
-	Module.arguments = ["--noout", "--relaxng", "schemas/docbook5.rng", "topic.xml"];
+	Module.arguments = ["--noout", "--relaxng", "schemas/docbook50.rng", "topic.xml"];
 }
 
 Module['return'] = '';
-Module['print'] = function(text) {
+Module['print'] = Module['printErr'] = function(text) {
 	Module['return'] += text + '\n';
 };
