@@ -3,6 +3,9 @@ if (!Module['preRun']) {
 }
 Module['preRun'].push(function() {
 	FS.createDataFile('/', 'topic.xml', Module['intArrayFromString'](Module['xml']), true, true);
+	FS.createPath('/','schemas', true, true);
+        FS.createLazyFile('/schemas','docbook45.dtd','docbook45.dtd', true, true);
+	FS.createLazyFile('/schemas','docbook50.dtd','docbook50.dtd', true, true);
 });
 
 if (Module['docbook4'])

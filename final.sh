@@ -21,5 +21,21 @@ echo "    docbook4: docbook4," >> xmllint.js
 echo "    docbook5: docbook5" >> xmllint.js
 echo "  };" >> xmllint.js
 cat xmllint.raw.js >> xmllint.js
-echo "  return Module.return;" >> xmllint.js
+echo "  var errors = Module.return;" >> xmllint.js
+echo "  FS.nameTable.length = 0;" >> xmllint.js
+echo "  FS.nameTable = null;" >> xmllint.js
+echo "  FS.root = null;" >> xmllint.js
+echo "  SOCKFS.root = null;" >> xmllint.js
+echo "  FS = null;" >> xmllint.js
+echo "  Module = null;" >> xmllint.js
+echo "  buffer = null;" >> xmllint.js
+echo "  HEAP8 = null;" >> xmllint.js
+echo "  HEAP16 = null;" >> xmllint.js
+echo "  HEAP32 = null;" >> xmllint.js
+echo "  HEAPU8 = null;" >> xmllint.js
+echo "  HEAPU16 = null;" >> xmllint.js
+echo "  HEAPU32 = null;" >> xmllint.js
+echo "  HEAPF32 = null;" >> xmllint.js
+echo "  HEAPF64 = null;" >> xmllint.js
+echo "  return errors;" >> xmllint.js
 echo "}  " >> xmllint.js

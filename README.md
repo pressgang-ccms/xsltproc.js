@@ -20,9 +20,15 @@ Add the following line to the nanohttp.c in the xmllib2 distribution:
 
 Configure and make xmllib2 and xmllint with the following commands:
 
-    emconfigure ./configure --without-python --without-threads --without-ftp --without-http
+    // Embeded files
+    emconfigure ./configure --without-python --without-threads --without-ftp --without-http --without-schemas --without-schematron
     emmake make
-    emcc SAX.o entities.o encoding.o error.o parserInternals.o parser.o tree.o hash.o list.o xmlIO.o xmlmemory.o uri.o valid.o xlink.o HTMLparser.o HTMLtree.o debugXML.o xpath.o xpointer.o xinclude.o nanohttp.o nanoftp.o catalog.o globals.o threads.o c14n.o xmlstring.o buf.o xmlregexp.o xmlschemas.o xmlschemastypes.o xmlunicode.o xmlreader.o relaxng.o dict.o SAX2.o xmlwriter.o legacy.o chvalid.o pattern.o xmlsave.o xmlmodule.o schematron.o xzlib.o xmllint.o ~/git/emscripten/tests/zlib/libz.a -O2 -o ../xmllint.raw.js -s ASM_JS=0 --pre-js ../xmllint-pre.js --embed-file schemas/docbook45.dtd --embed-file schemas/docbook50.dtd
+    emcc xmllint.o .libs/libxml2.a ~/git/emscripten/tests/zlib/libz.a -O2 -o ../xmllint.raw.js -s TOTAL_STACK="1048576" -s TOTAL_MEMORY="10485760" -s FAST_MEMORY="2048" -s ASM_JS=0 -s DEFAULT_LIBRARY_FUNCS_TO_INCLUDE="['memcpy','memset','malloc','free','strlen']" --pre-js ../xmllint-pre.js --embed-file schemas/docbook45.dtd --embed-file schemas/docbook50.dtd
+
+    // Lazy Loaded files (via XHR requests)
+    emconfigure ./configure --without-python --without-threads --without-ftp --without-http --without-schemas --without-schematron
+    emmake make
+    emcc xmllint.o .libs/libxml2.a ~/git/emscripten/tests/zlib/libz.a -O2 -o ../xmllint.raw.js -s TOTAL_STACK="1048576" -s TOTAL_MEMORY="10485760" -s FAST_MEMORY="2048" -s ASM_JS=0 -s DEFAULT_LIBRARY_FUNCS_TO_INCLUDE="['memcpy','memset','malloc','free','strlen']" --pre-js ../xmllint-pre-lazy.js
 
 Configure and make the zlib library (included in emscripten/tests/zlib/) with the following commands:
 
