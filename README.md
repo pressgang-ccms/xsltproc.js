@@ -48,6 +48,6 @@ Wrap the output in usable methods:
 
     ./final.sh
 
-Note: We use the Google Closure compiler (https://developers.google.com/closure/compiler/)to minify the generated javascript, instead of the builtin version. An example command to minify the code is:
+Note: We use the Google Closure compiler ( https://developers.google.com/closure/compiler/ ) to minify the generated javascript, instead of the builtin version. An example command to minify the code is:
 
     java -jar compiler.jar --compilation_level SIMPLE_OPTIMIZATIONS --js xmllint.js --js_output_file xmllint-min.js --language_in ECMASCRIPT5 --warning_level QUIET
