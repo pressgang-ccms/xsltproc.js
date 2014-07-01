@@ -18,6 +18,11 @@ Add the following line to the nanohttp.c in the xmllib2 distribution:
 
     #define __LINUX_ERRNO_EXTENSIONS__
 
+Configure and make the zlib library (included in emscripten/tests/zlib/) with the following commands:
+
+    emconfigure ./configure
+    emmake make
+
 Configure and make xmllib2 and xmllint with the following commands:
 
     // Embeded files
@@ -30,11 +35,6 @@ Configure and make xmllib2 and xmllint with the following commands:
     emmake make
     emcc xmllint.o .libs/libxml2.a ~/git/emscripten/tests/zlib/libz.a -O2 -o ../xmllint.raw.js -s TOTAL_STACK="1048576" -s TOTAL_MEMORY="10485760" -s FAST_MEMORY="2048" -s ASM_JS=0 -s DEFAULT_LIBRARY_FUNCS_TO_INCLUDE="['memcpy','memset','malloc','free','strlen']" --pre-js ../xmllint-pre-lazy.js
 
-Configure and make the zlib library (included in emscripten/tests/zlib/) with the following commands:
-
-    emconfigure ./configure
-    emmake make
-
 Configure and make xsltproc with the following commands:
 
     chmod +x ../libxml2-2.9.1/xml2-config
@@ -43,51 +43,11 @@ Configure and make xsltproc with the following commands:
 	export JAVA_HEAP_SIZE=4096m
 	cd docbook-xsl-1.78.1
 	emcc -s TOTAL_STACK=10485760 -s TOTAL_MEMORY=33554432 -O2 --llvm-opts 3 --llvm-lto 1 -s ASM_JS=0 --pre-js ../pre.js ../libxslt-1.1.28/xsltproc/xsltproc.o /home/matthew/emscripten/tests/zlib/adler32.o /home/matthew/emscripten/tests/zlib/compress.o /home/matthew/emscripten/tests/zlib/crc32.o /home/matthew/emscripten/tests/zlib/deflate.o /home/matthew/emscripten/tests/zlib/gzclose.o /home/matthew/emscripten/tests/zlib/gzlib.o /home/matthew/emscripten/tests/zlib/gzread.o /home/matthew/emscripten/tests/zlib/gzwrite.o /home/matthew/emscripten/tests/zlib/infback.o /home/matthew/emscripten/tests/zlib/inffast.o /home/matthew/emscripten/tests/zlib/inflate.o /home/matthew/emscripten/tests/zlib/inftrees.o /home/matthew/emscripten/tests/zlib/trees.o /home/matthew/emscripten/tests/zlib/uncompr.o /home/matthew/emscripten/tests/zlib/zutil.o ../libxslt-1.1.28/libexslt/common.o ../libxslt-1.1.28/libexslt/crypto.o ../libxslt-1.1.28/libexslt/date.o ../libxslt-1.1.28/libexslt/dynamic.o ../libxslt-1.1.28/libexslt/exslt.o ../libxslt-1.1.28/libexslt/functions.o ../libxslt-1.1.28/libexslt/math.o ../libxslt-1.1.28/libexslt/saxon.o ../libxslt-1.1.28/libexslt/sets.o ../libxslt-1.1.28/libexslt/strings.o ../libxslt-1.1.28/libxslt/attributes.o ../libxslt-1.1.28/libxslt/attrvt.o ../libxslt-1.1.28/libxslt/documents.o ../libxslt-1.1.28/libxslt/extensions.o ../libxslt-1.1.28/libxslt/extra.o ../libxslt-1.1.28/libxslt/functions.o ../libxslt-1.1.28/libxslt/imports.o ../libxslt-1.1.28/libxslt/keys.o ../libxslt-1.1.28/libxslt/namespaces.o ../libxslt-1.1.28/libxslt/numbers.o ../libxslt-1.1.28/libxslt/pattern.o ../libxslt-1.1.28/libxslt/preproc.o ../libxslt-1.1.28/libxslt/security.o ../libxslt-1.1.28/libxslt/templates.o ../libxslt-1.1.28/libxslt/transform.o ../libxslt-1.1.28/libxslt/variables.o ../libxslt-1.1.28/libxslt/xsltlocale.o ../libxslt-1.1.28/libxslt/xslt.o ../libxslt-1.1.28/libxslt/xsltutils.o ../libxml2-2.9.1/.libs/libxml2.a -o ../xsltproc.raw.js --embed-file VERSION.xsl --embed-file lib/lib.xsl --embed-file common/af.xml --embed-file common/am.xml --embed-file common/ar.xml --embed-file common/ast.xml --embed-file common/as.xml --embed-file common/autoidx-kimber.xsl --embed-file common/autoidx-kosek.xsl --embed-file common/az.xml --embed-file common/bg.xml --embed-file common/bn_in.xml --embed-file common/bn.xml --embed-file common/bs.xml --embed-file common/ca.xml --embed-file common/charmap.xml --embed-file common/charmap.xsl --embed-file common/common.xml --embed-file common/common.xsl --embed-file common/cs.xml --embed-file common/cy.xml --embed-file common/da.xml --embed-file common/de.xml --embed-file common/el.xml --embed-file common/entities.ent --embed-file common/en.xml --embed-file common/eo.xml --embed-file common/es.xml --embed-file common/et.xml --embed-file common/eu.xml --embed-file common/fa.xml --embed-file common/fi.xml --embed-file common/fr.xml --embed-file common/ga.xml --embed-file common/gentext.xsl --embed-file common/gl.xml --embed-file common/gu.xml --embed-file common/he.xml --embed-file common/hi.xml --embed-file common/hr.xml --embed-file common/hu.xml --embed-file common/id.xml --embed-file common/insertfile.xsl --embed-file common/is.xml --embed-file common/it.xml --embed-file common/ja.xml --embed-file common/ka.xml --embed-file common/kn.xml --embed-file common/ko.xml --embed-file common/ky.xml --embed-file common/l10n.dtd --embed-file common/l10n.xml --embed-file common/l10n.xsl --embed-file common/labels.xsl --embed-file common/la.xml --embed-file common/lt.xml --embed-file common/lv.xml --embed-file common/ml.xml --embed-file common/mn.xml --embed-file common/mr.xml --embed-file common/nb.xml --embed-file common/nds.xml --embed-file common/nl.xml --embed-file common/nn.xml --embed-file common/olink.xsl --embed-file common/or.xml --embed-file common/pa.xml --embed-file common/pi.xml --embed-file common/pi.xsl --embed-file common/pl.xml --embed-file common/pt_br.xml --embed-file common/pt.xml --embed-file common/refentry.xml --embed-file common/refentry.xsl --embed-file common/ro.xml --embed-file common/ru.xml --embed-file common/sk.xml --embed-file common/sl.xml --embed-file common/sq.xml --embed-file common/sr_Latn.xml --embed-file common/sr.xml --embed-file common/stripns.xsl --embed-file common/subtitles.xsl --embed-file common/sv.xml --embed-file common/table.xsl --embed-file common/targetdatabase.dtd --embed-file common/targets.xsl --embed-file common/ta.xml --embed-file common/te.xml --embed-file common/th.xml --embed-file common/titles.xsl --embed-file common/tl.xml --embed-file common/tr.xml --embed-file common/uk.xml --embed-file common/utility.xml --embed-file common/utility.xsl --embed-file common/vi.xml --embed-file common/xh.xml --embed-file common/zh_cn.xml --embed-file common/zh_tw.xml --embed-file common/zh.xml --embed-file html/admon.xsl --embed-file html/annotations.xsl --embed-file html/autoidx-kimber.xsl --embed-file html/autoidx-kosek.xsl --embed-file html/autoidx-ng.xsl --embed-file html/autoidx.xsl --embed-file html/autotoc.xsl --embed-file html/biblio-iso690.xsl --embed-file html/biblio.xsl --embed-file html/block.xsl --embed-file html/callout.xsl --embed-file html/changebars.xsl --embed-file html/chunk-changebars.xsl --embed-file html/chunk-code.xsl --embed-file html/chunk-common.xsl --embed-file html/chunker.xsl --embed-file html/chunkfast.xsl --embed-file html/chunktoc.xsl --embed-file html/chunk.xsl --embed-file html/component.xsl --embed-file html/division.xsl --embed-file html/docbook.css.xml --embed-file html/docbook.xsl --embed-file html/ebnf.xsl --embed-file html/footnote.xsl --embed-file html/formal.xsl --embed-file html/glossary.xsl --embed-file html/graphics.xsl --embed-file html/highlight.xsl --embed-file html/html-rtf.xsl --embed-file html/htmltbl.xsl --embed-file html/html.xsl --embed-file html/index.xsl --embed-file html/info.xsl --embed-file html/inline.xsl --embed-file html/keywords.xsl --embed-file html/lists.xsl --embed-file html/maketoc.xsl --embed-file html/manifest.xsl --embed-file html/math.xsl --embed-file html/oldchunker.xsl --embed-file html/onechunk.xsl --embed-file html/param.xml --embed-file html/param.xsl --embed-file html/pi.xml --embed-file html/pi.xsl --embed-file html/profile-chunk-code.xsl --embed-file html/profile-chunk.xsl --embed-file html/profile-docbook.xsl --embed-file html/profile-onechunk.xsl --embed-file html/qandaset.xsl --embed-file html/refentry.xsl --embed-file html/sections.xsl --embed-file html/synop.xsl --embed-file html/table.xsl --embed-file html/task.xsl --embed-file html/titlepage.templates.xml --embed-file html/titlepage.templates.xsl --embed-file html/titlepage.xsl --embed-file html/toc.xsl --embed-file html/verbatim.xsl --embed-file html/xref.xsl
-	cd ..
-	./final.sh
-	
-A manual change to the generated code is required to fix a bug where Emscripten overwrites Module\['print'\] (see https://groups.google.com/forum/#!topic/emscripten-discuss/vRkHs0FNH_Y for details). In xmllint.js, change
 
-	else if (ENVIRONMENT_IS_WEB || ENVIRONMENT_IS_WORKER) {
-	  Module['read'] = function read(url) {
-	    var xhr = new XMLHttpRequest();
-	    xhr.open('GET', url, false);
-	    xhr.send(null);
-	    return xhr.responseText;
-	  };
-	  if (typeof arguments != 'undefined') {
-	    Module['arguments'] = arguments;
-	  }
-	  if (typeof console !== 'undefined') {
-	    Module['print'] = function print(x) {
-	      console.log(x);
-	    };
-	    Module['printErr'] = function printErr(x) {
-	      console.log(x);
-	    };
-	  }
-	  
-to
+Wrap the output in usable methods:
 
-	else if (ENVIRONMENT_IS_WEB || ENVIRONMENT_IS_WORKER) {
-	  Module['read'] = function read(url) {
-	    var xhr = new XMLHttpRequest();
-	    xhr.open('GET', url, false);
-	    xhr.send(null);
-	    return xhr.responseText;
-	  };
-	  if (typeof arguments != 'undefined') {
-	    Module['arguments'] = arguments;
-	  }
-	  if (typeof console !== 'undefined') {
-	    /*
-	    We already define functions for print and printErr, so comment these out.
-	
-	    Module['print'] = function print(x) {
-	      console.log(x);
-	    };
-	    Module['printErr'] = function printErr(x) {
-	      console.log(x);
-	    };
-	    */
-	  }
+    ./final.sh
+
+Note: We use the Google Closure compiler (https://developers.google.com/closure/compiler/)to minify the generated javascript, instead of the builtin version. An example command to minify the code is:
+
+    java -jar compiler.jar --compilation_level SIMPLE_OPTIMIZATIONS --js xmllint.js --js_output_file xmllint-min.js --language_in ECMASCRIPT5 --warning_level QUIET
